@@ -5,7 +5,6 @@
 
   boot.loader.grub = {
     enable = true;
-    version = 2;
     devices = [ "/dev/nvme0n1" "/dev/nvme1n1" ];   # Install GRUB on the first disk
     forceInstall = true;
     useOSProber = false;
@@ -43,7 +42,7 @@
   };
 
   swapDevices = [
-    { device = "/dev/md127"; }
+    { device = "/dev/md126"; }
   ];
 
   services.qemuGuest.enable = true;
@@ -54,8 +53,5 @@
     git neovim sops age kitty docker kubernetes openshift
     wget curl zsh-powerlevel10k
   ];
-
-  services.mdadm.enable = true;
-  services.mdadm.mail = "oleg.ilyine@gmail.com";
   system.stateVersion = "25.11";
 }
