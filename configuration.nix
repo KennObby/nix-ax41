@@ -13,7 +13,10 @@
   networking = {
     hostName = "nix-ax41";
     useDHCP = true;
-    firewall.enable = false;
+    firewall = {
+        enable = false;
+        allowedTCPPorts = [ 22 80 443];
+    };
   };
 
   time.timeZone = "Europe/Brussels";
@@ -26,6 +29,7 @@
     settings = {
       PermitRootLogin = "prohibit-password";
       PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
     };
   };
 
@@ -51,7 +55,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
     git neovim sops age kitty docker kubernetes openshift
-    wget curl zsh-powerlevel10k
+    wget curl zsh-powerlevel10k nodejs_24
   ];
   system.stateVersion = "25.11";
 }
