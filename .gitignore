@@ -1,0 +1,5 @@
+/var/lib/sops-nix/
+secrets/*.key
+secrets/*.agekey
+secrets/key.txt
+modules/dns.nix

@@ -1,0 +1,8 @@
+keys:
+  - &nix_ax41 age1s3299zv5xs56fnvnyeypcqtxcgn46lls376ucjdek9v3p2jtlvaqff4tlq
+
+creation_rules:
+  - path_regex: secrets/.*\.yaml
+    key_groups:
+      - age:
+        - *nix_ax41
