@@ -2,4 +2,5 @@
 secrets/*.key
 secrets/*.agekey
 secrets/key.txt
+zones/*.zone
 modules/dns.nix
