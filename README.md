@@ -235,6 +235,6 @@ sudo nixos-rebuild switch --flake /etc/nixos#nix-ax41
 
 The server is configured as learning NixOS and DevSecOps utility infrastructure. It implements a complete observability and monitoring platform with secure HTTPS, encrypted secrets, reverse proxying, metrics, logs, dashboards and alerting infrastructure, entirely managed declaratively. The modular setup allows easy extension, reproducible builds, and consistent infrastructure.
 
-More tools will be added in the next few days/weeks e.g. Security Hardening with Falco and OpenSCAP, CI/CD Build Pipeline with ArgoCD and/or Github Actions, SIEM and Endpoint tools and so on...
+More tools will be added in the next few days/weeks e.g. Security Hardening with Falco and OpenSCAP, CI/CD Build Pipeline with ArgoCD and/or Github Actions, SIEM/Endpoints tools with Wazuh and so on...
 
 
