@@ -40,6 +40,7 @@
                 };
                 replication_factor = 1;
                 path_prefix = "/var/lib/loki";
+                instance_interface_names = builtins.attrNames config.networking.interfaces; # letting Loki decide whether enp41s0, eth0, lo nor en0 network interface he listens to 
             };
 
             ingester = {

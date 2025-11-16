@@ -39,14 +39,8 @@
 
     services.zabbixWeb = {
         enable = true;
-        hostname = "zabbix.nix-ax41.io";
+        hostname = "zabbix.devopsincoming.com";
 
-        nginx.virtualHost = {
-            serverName = "zabbix.nix-ax41.io";
-            serverAliases = [ "zabbix" ];
-            enableACME = true;
-            forceSSL = true;
-        };
         database = {
             type = "mysql";
             host = "127.0.0.1";

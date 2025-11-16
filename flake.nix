@@ -20,7 +20,8 @@
             ./modules/zabbix.nix
             ./modules/fail2ban.nix
             ./modules/nginx.nix
-            ./modules/dns.nix
+            ./modules/networking.nix
+            #./modules/dns.nix
             #./modules/wazuh.nix
 
             # sops-nix module
